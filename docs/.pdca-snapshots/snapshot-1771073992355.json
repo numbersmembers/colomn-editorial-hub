@@ -1,0 +1,119 @@
+{
+  "timestamp": "2026-02-14T12:59:52.352Z",
+  "reason": "compaction",
+  "status": {
+    "version": "2.0",
+    "lastUpdated": "2026-02-14T12:34:21.204Z",
+    "activeFeatures": [
+      "editor",
+      "column-editorial-hub"
+    ],
+    "primaryFeature": "editor",
+    "features": {
+      "editor": {
+        "phase": "do",
+        "phaseNumber": 3,
+        "matchRate": null,
+        "iterationCount": 0,
+        "requirements": [],
+        "documents": {},
+        "timestamps": {
+          "started": "2026-02-14T12:27:13.304Z",
+          "lastUpdated": "2026-02-14T12:29:03.679Z"
+        },
+        "lastFile": "c:\\Users\\user\\Desktop\\column-editorial-hub\\src\\app\\editor\\WorkspaceContext.tsx"
+      },
+      "column-editorial-hub": {
+        "phase": "do",
+        "phaseNumber": 3,
+        "matchRate": null,
+        "iterationCount": 0,
+        "requirements": [],
+        "documents": {},
+        "timestamps": {
+          "started": "2026-02-14T12:34:21.204Z",
+          "lastUpdated": "2026-02-14T12:34:21.204Z"
+        },
+        "lastFile": "c:\\Users\\user\\Desktop\\column-editorial-hub\\src\\app\\actions.ts"
+      }
+    },
+    "pipeline": {
+      "currentPhase": 1,
+      "level": "Dynamic",
+      "phaseHistory": []
+    },
+    "session": {
+      "startedAt": "2026-02-14T10:09:25.219Z",
+      "onboardingCompleted": false,
+      "lastActivity": "2026-02-14T12:34:21.204Z"
+    },
+    "history": [
+      {
+        "timestamp": "2026-02-14T12:27:13.304Z",
+        "feature": "editor",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-14T12:27:25.928Z",
+        "feature": "editor",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-14T12:27:33.911Z",
+        "feature": "editor",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-14T12:27:42.713Z",
+        "feature": "editor",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-14T12:27:49.470Z",
+        "feature": "editor",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-14T12:28:07.864Z",
+        "feature": "editor",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-14T12:28:20.009Z",
+        "feature": "editor",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-14T12:28:32.259Z",
+        "feature": "editor",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-14T12:28:39.452Z",
+        "feature": "editor",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-14T12:29:03.679Z",
+        "feature": "editor",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-14T12:34:21.204Z",
+        "feature": "column-editorial-hub",
+        "phase": "do",
+        "action": "updated"
+      }
+    ]
+  }
+}

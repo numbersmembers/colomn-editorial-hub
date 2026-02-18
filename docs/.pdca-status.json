@@ -1,0 +1,549 @@
+{
+  "version": "2.0",
+  "lastUpdated": "2026-02-15T12:30:18.863Z",
+  "activeFeatures": [
+    "editor",
+    "column-editorial-hub",
+    "prompts",
+    "steps",
+    "generate",
+    "generators",
+    "road",
+    "generic",
+    "research"
+  ],
+  "primaryFeature": "editor",
+  "features": {
+    "editor": {
+      "phase": "do",
+      "phaseNumber": 3,
+      "matchRate": null,
+      "iterationCount": 0,
+      "requirements": [],
+      "documents": {},
+      "timestamps": {
+        "started": "2026-02-14T12:27:13.304Z",
+        "lastUpdated": "2026-02-15T12:30:18.863Z"
+      },
+      "lastFile": "c:\\Users\\user\\Desktop\\column-editorial-hub\\src\\app\\editor\\PipelineProgress.tsx"
+    },
+    "column-editorial-hub": {
+      "phase": "do",
+      "phaseNumber": 3,
+      "matchRate": null,
+      "iterationCount": 0,
+      "requirements": [],
+      "documents": {},
+      "timestamps": {
+        "started": "2026-02-14T12:34:21.204Z",
+        "lastUpdated": "2026-02-14T15:09:10.507Z"
+      },
+      "lastFile": "c:\\Users\\user\\Desktop\\column-editorial-hub\\src\\models\\gemini.ts"
+    },
+    "prompts": {
+      "phase": "do",
+      "phaseNumber": 3,
+      "matchRate": null,
+      "iterationCount": 0,
+      "requirements": [],
+      "documents": {},
+      "timestamps": {
+        "started": "2026-02-14T13:22:12.925Z",
+        "lastUpdated": "2026-02-14T15:08:58.659Z"
+      },
+      "lastFile": "c:\\Users\\user\\Desktop\\column-editorial-hub\\src\\generators\\road\\prompts\\revision.ts"
+    },
+    "steps": {
+      "phase": "do",
+      "phaseNumber": 3,
+      "matchRate": null,
+      "iterationCount": 0,
+      "requirements": [],
+      "documents": {},
+      "timestamps": {
+        "started": "2026-02-14T13:22:14.896Z",
+        "lastUpdated": "2026-02-14T14:52:55.338Z"
+      },
+      "lastFile": "c:\\Users\\user\\Desktop\\column-editorial-hub\\src\\generators\\road\\steps\\convertStyle.ts"
+    },
+    "generate": {
+      "phase": "do",
+      "phaseNumber": 3,
+      "matchRate": null,
+      "iterationCount": 0,
+      "requirements": [],
+      "documents": {},
+      "timestamps": {
+        "started": "2026-02-14T13:22:41.118Z",
+        "lastUpdated": "2026-02-14T14:56:10.119Z"
+      },
+      "lastFile": "c:\\Users\\user\\Desktop\\column-editorial-hub\\src\\app\\api\\generate\\route.ts"
+    },
+    "generators": {
+      "phase": "do",
+      "phaseNumber": 3,
+      "matchRate": null,
+      "iterationCount": 0,
+      "requirements": [],
+      "documents": {},
+      "timestamps": {
+        "started": "2026-02-14T13:22:43.840Z",
+        "lastUpdated": "2026-02-14T13:22:43.841Z"
+      },
+      "lastFile": "c:\\Users\\user\\Desktop\\column-editorial-hub\\src\\generators\\types.ts"
+    },
+    "road": {
+      "phase": "do",
+      "phaseNumber": 3,
+      "matchRate": null,
+      "iterationCount": 0,
+      "requirements": [],
+      "documents": {},
+      "timestamps": {
+        "started": "2026-02-14T13:26:37.043Z",
+        "lastUpdated": "2026-02-14T14:53:36.490Z"
+      },
+      "lastFile": "c:\\Users\\user\\Desktop\\column-editorial-hub\\src\\generators\\road\\config.ts"
+    },
+    "generic": {
+      "phase": "do",
+      "phaseNumber": 3,
+      "matchRate": null,
+      "iterationCount": 0,
+      "requirements": [],
+      "documents": {},
+      "timestamps": {
+        "started": "2026-02-14T13:26:46.033Z",
+        "lastUpdated": "2026-02-14T13:26:46.033Z"
+      },
+      "lastFile": "c:\\Users\\user\\Desktop\\column-editorial-hub\\src\\generators\\generic\\index.ts"
+    },
+    "research": {
+      "phase": "do",
+      "phaseNumber": 3,
+      "matchRate": null,
+      "iterationCount": 0,
+      "requirements": [],
+      "documents": {},
+      "timestamps": {
+        "started": "2026-02-15T12:18:22.765Z",
+        "lastUpdated": "2026-02-15T12:18:22.765Z"
+      },
+      "lastFile": "c:\\Users\\user\\Desktop\\column-editorial-hub\\src\\agents\\research\\FactCheckEngine.ts"
+    }
+  },
+  "pipeline": {
+    "currentPhase": 1,
+    "level": "Dynamic",
+    "phaseHistory": []
+  },
+  "session": {
+    "startedAt": "2026-02-14T10:09:25.219Z",
+    "onboardingCompleted": false,
+    "lastActivity": "2026-02-15T12:30:18.863Z"
+  },
+  "history": [
+    {
+      "timestamp": "2026-02-14T12:27:13.304Z",
+      "feature": "editor",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-14T12:27:25.928Z",
+      "feature": "editor",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-14T12:27:33.911Z",
+      "feature": "editor",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-14T12:27:42.713Z",
+      "feature": "editor",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-14T12:27:49.470Z",
+      "feature": "editor",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-14T12:28:07.864Z",
+      "feature": "editor",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-14T12:28:20.009Z",
+      "feature": "editor",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-14T12:28:32.259Z",
+      "feature": "editor",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-14T12:28:39.452Z",
+      "feature": "editor",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-14T12:29:03.679Z",
+      "feature": "editor",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-14T12:34:21.204Z",
+      "feature": "column-editorial-hub",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-14T13:21:47.818Z",
+      "feature": "column-editorial-hub",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-14T13:22:01.712Z",
+      "feature": "column-editorial-hub",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-14T13:22:12.925Z",
+      "feature": "prompts",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-14T13:22:14.896Z",
+      "feature": "steps",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-14T13:22:41.118Z",
+      "feature": "generate",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-14T13:22:43.841Z",
+      "feature": "generators",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-14T13:24:52.461Z",
+      "feature": "editor",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-14T13:24:58.936Z",
+      "feature": "editor",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-14T13:25:02.724Z",
+      "feature": "editor",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-14T13:26:37.043Z",
+      "feature": "road",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-14T13:26:46.033Z",
+      "feature": "generic",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-14T13:30:11.845Z",
+      "feature": "editor",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-14T13:30:29.034Z",
+      "feature": "editor",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-14T13:30:36.958Z",
+      "feature": "column-editorial-hub",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-14T13:42:23.639Z",
+      "feature": "column-editorial-hub",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-14T13:42:25.273Z",
+      "feature": "column-editorial-hub",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-14T13:42:26.871Z",
+      "feature": "column-editorial-hub",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-14T13:49:50.947Z",
+      "feature": "prompts",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-14T13:50:06.719Z",
+      "feature": "prompts",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-14T13:50:34.102Z",
+      "feature": "generate",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-14T13:50:45.463Z",
+      "feature": "steps",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-14T13:56:01.660Z",
+      "feature": "editor",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-14T13:56:17.340Z",
+      "feature": "generate",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-14T13:57:11.069Z",
+      "feature": "column-editorial-hub",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-14T14:27:11.429Z",
+      "feature": "column-editorial-hub",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-14T14:50:31.843Z",
+      "feature": "column-editorial-hub",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-14T14:50:42.789Z",
+      "feature": "column-editorial-hub",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-14T14:52:31.391Z",
+      "feature": "prompts",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-14T14:52:55.338Z",
+      "feature": "steps",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-14T14:53:12.137Z",
+      "feature": "road",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-14T14:53:19.988Z",
+      "feature": "prompts",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-14T14:53:36.490Z",
+      "feature": "road",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-14T14:54:14.416Z",
+      "feature": "editor",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-14T14:54:20.701Z",
+      "feature": "editor",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-14T14:54:27.308Z",
+      "feature": "editor",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-14T14:54:34.774Z",
+      "feature": "editor",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-14T14:54:41.197Z",
+      "feature": "editor",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-14T14:55:07.261Z",
+      "feature": "editor",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-14T14:55:16.209Z",
+      "feature": "editor",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-14T14:55:36.862Z",
+      "feature": "editor",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-14T14:55:49.164Z",
+      "feature": "editor",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-14T14:56:10.119Z",
+      "feature": "generate",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-14T15:08:50.159Z",
+      "feature": "prompts",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-14T15:08:58.659Z",
+      "feature": "prompts",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-14T15:09:10.507Z",
+      "feature": "column-editorial-hub",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-15T12:16:34.620Z",
+      "feature": "editor",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-15T12:18:22.765Z",
+      "feature": "research",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-15T12:18:42.865Z",
+      "feature": "editor",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-15T12:19:05.778Z",
+      "feature": "editor",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-15T12:28:14.220Z",
+      "feature": "editor",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-15T12:28:23.795Z",
+      "feature": "editor",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-15T12:28:29.599Z",
+      "feature": "editor",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-15T12:28:39.923Z",
+      "feature": "editor",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-15T12:28:46.315Z",
+      "feature": "editor",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-15T12:29:15.269Z",
+      "feature": "editor",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-02-15T12:30:18.863Z",
+      "feature": "editor",
+      "phase": "do",
+      "action": "updated"
+    }
+  ]
+}

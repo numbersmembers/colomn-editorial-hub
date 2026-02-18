@@ -1,0 +1,269 @@
+{
+  "timestamp": "2026-02-14T13:27:22.448Z",
+  "reason": "compaction",
+  "status": {
+    "version": "2.0",
+    "lastUpdated": "2026-02-14T13:26:46.033Z",
+    "activeFeatures": [
+      "editor",
+      "column-editorial-hub",
+      "prompts",
+      "steps",
+      "generate",
+      "generators",
+      "road",
+      "generic"
+    ],
+    "primaryFeature": "editor",
+    "features": {
+      "editor": {
+        "phase": "do",
+        "phaseNumber": 3,
+        "matchRate": null,
+        "iterationCount": 0,
+        "requirements": [],
+        "documents": {},
+        "timestamps": {
+          "started": "2026-02-14T12:27:13.304Z",
+          "lastUpdated": "2026-02-14T13:25:02.724Z"
+        },
+        "lastFile": "c:\\Users\\user\\Desktop\\column-editorial-hub\\src\\app\\editor\\PipelineProgress.tsx"
+      },
+      "column-editorial-hub": {
+        "phase": "do",
+        "phaseNumber": 3,
+        "matchRate": null,
+        "iterationCount": 0,
+        "requirements": [],
+        "documents": {},
+        "timestamps": {
+          "started": "2026-02-14T12:34:21.204Z",
+          "lastUpdated": "2026-02-14T13:22:01.712Z"
+        },
+        "lastFile": "c:\\Users\\user\\Desktop\\column-editorial-hub\\src\\lib\\knowledge.ts"
+      },
+      "prompts": {
+        "phase": "do",
+        "phaseNumber": 3,
+        "matchRate": null,
+        "iterationCount": 0,
+        "requirements": [],
+        "documents": {},
+        "timestamps": {
+          "started": "2026-02-14T13:22:12.925Z",
+          "lastUpdated": "2026-02-14T13:22:12.925Z"
+        },
+        "lastFile": "c:\\Users\\user\\Desktop\\column-editorial-hub\\src\\generators\\road\\prompts\\merge.ts"
+      },
+      "steps": {
+        "phase": "do",
+        "phaseNumber": 3,
+        "matchRate": null,
+        "iterationCount": 0,
+        "requirements": [],
+        "documents": {},
+        "timestamps": {
+          "started": "2026-02-14T13:22:14.896Z",
+          "lastUpdated": "2026-02-14T13:22:14.896Z"
+        },
+        "lastFile": "c:\\Users\\user\\Desktop\\column-editorial-hub\\src\\generators\\road\\steps\\mergeSources.ts"
+      },
+      "generate": {
+        "phase": "do",
+        "phaseNumber": 3,
+        "matchRate": null,
+        "iterationCount": 0,
+        "requirements": [],
+        "documents": {},
+        "timestamps": {
+          "started": "2026-02-14T13:22:41.118Z",
+          "lastUpdated": "2026-02-14T13:22:41.118Z"
+        },
+        "lastFile": "c:\\Users\\user\\Desktop\\column-editorial-hub\\src\\app\\api\\generate\\route.ts"
+      },
+      "generators": {
+        "phase": "do",
+        "phaseNumber": 3,
+        "matchRate": null,
+        "iterationCount": 0,
+        "requirements": [],
+        "documents": {},
+        "timestamps": {
+          "started": "2026-02-14T13:22:43.840Z",
+          "lastUpdated": "2026-02-14T13:22:43.841Z"
+        },
+        "lastFile": "c:\\Users\\user\\Desktop\\column-editorial-hub\\src\\generators\\types.ts"
+      },
+      "road": {
+        "phase": "do",
+        "phaseNumber": 3,
+        "matchRate": null,
+        "iterationCount": 0,
+        "requirements": [],
+        "documents": {},
+        "timestamps": {
+          "started": "2026-02-14T13:26:37.043Z",
+          "lastUpdated": "2026-02-14T13:26:37.043Z"
+        },
+        "lastFile": "c:\\Users\\user\\Desktop\\column-editorial-hub\\src\\generators\\road\\index.ts"
+      },
+      "generic": {
+        "phase": "do",
+        "phaseNumber": 3,
+        "matchRate": null,
+        "iterationCount": 0,
+        "requirements": [],
+        "documents": {},
+        "timestamps": {
+          "started": "2026-02-14T13:26:46.033Z",
+          "lastUpdated": "2026-02-14T13:26:46.033Z"
+        },
+        "lastFile": "c:\\Users\\user\\Desktop\\column-editorial-hub\\src\\generators\\generic\\index.ts"
+      }
+    },
+    "pipeline": {
+      "currentPhase": 1,
+      "level": "Dynamic",
+      "phaseHistory": []
+    },
+    "session": {
+      "startedAt": "2026-02-14T10:09:25.219Z",
+      "onboardingCompleted": false,
+      "lastActivity": "2026-02-14T13:26:46.033Z"
+    },
+    "history": [
+      {
+        "timestamp": "2026-02-14T12:27:13.304Z",
+        "feature": "editor",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-14T12:27:25.928Z",
+        "feature": "editor",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-14T12:27:33.911Z",
+        "feature": "editor",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-14T12:27:42.713Z",
+        "feature": "editor",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-14T12:27:49.470Z",
+        "feature": "editor",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-14T12:28:07.864Z",
+        "feature": "editor",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-14T12:28:20.009Z",
+        "feature": "editor",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-14T12:28:32.259Z",
+        "feature": "editor",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-14T12:28:39.452Z",
+        "feature": "editor",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-14T12:29:03.679Z",
+        "feature": "editor",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-14T12:34:21.204Z",
+        "feature": "column-editorial-hub",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-14T13:21:47.818Z",
+        "feature": "column-editorial-hub",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-14T13:22:01.712Z",
+        "feature": "column-editorial-hub",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-14T13:22:12.925Z",
+        "feature": "prompts",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-14T13:22:14.896Z",
+        "feature": "steps",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-14T13:22:41.118Z",
+        "feature": "generate",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-14T13:22:43.841Z",
+        "feature": "generators",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-14T13:24:52.461Z",
+        "feature": "editor",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-14T13:24:58.936Z",
+        "feature": "editor",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-14T13:25:02.724Z",
+        "feature": "editor",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-14T13:26:37.043Z",
+        "feature": "road",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-14T13:26:46.033Z",
+        "feature": "generic",
+        "phase": "do",
+        "action": "updated"
+      }
+    ]
+  }
+}
