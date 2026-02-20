@@ -15,7 +15,7 @@ type RoadDisplayData = {
 }
 
 export default function TutorSetup() {
-  const { selectedGeneratorId, generatorSettings, updateGeneratorSettings, articleSources, setArticleSources, sourceColumnBody, setSourceColumnBody } = useWorkspace();
+  const { selectedGeneratorId, generatorSettings, updateGeneratorSettings, articleSources, setArticleSources, sourceColumnBody, setSourceColumnBody, columnIdea, setColumnIdea, genericInputMode, setGenericInputMode } = useWorkspace();
   const [roadData, setRoadData] = useState<RoadDisplayData | null>(null);
   const [linkInput, setLinkInput] = useState('');
 
@@ -35,7 +35,6 @@ export default function TutorSetup() {
     }
   };
 
-  // Shared article link section for ALL generators
   const articleLinkSection = (
     <div className={styles.ruleBlock}>
       <div className={styles.ruleTitle}>기사 링크</div>
@@ -114,7 +113,7 @@ export default function TutorSetup() {
     );
   }
 
-  // Generic Generator - use extracted form component
+  // Generic Generator
   const settings = generatorSettings['generic'] || {};
 
   const handleUpdate = (key: string, value: unknown) => {
@@ -123,7 +122,34 @@ export default function TutorSetup() {
 
   return (
     <div>
-      {articleLinkSection}
+      <div className={styles.modeToggle}>
+        <button
+          className={`${styles.modeBtn} ${genericInputMode === 'idea' ? styles.modeBtnActive : ''}`}
+          onClick={() => setGenericInputMode('idea')}
+        >
+          아이디어로 작성
+        </button>
+        <button
+          className={`${styles.modeBtn} ${genericInputMode === 'article' ? styles.modeBtnActive : ''}`}
+          onClick={() => setGenericInputMode('article')}
+        >
+          기사 링크 입력
+        </button>
+      </div>
+      {genericInputMode === 'idea' ? (
+        <div className={styles.ruleBlock}>
+          <div className={styles.ruleTitle}>칼럼 아이디어</div>
+          <textarea
+            className={styles.formTextarea}
+            style={{ minHeight: 120 }}
+            value={columnIdea}
+            onChange={e => setColumnIdea(e.target.value)}
+            placeholder="칼럼 주제나 아이디어를 입력하세요 (예: 삼성전자의 파운드리 전략 변화)"
+          />
+        </div>
+      ) : (
+        articleLinkSection
+      )}
       <GenericSettingsForm settings={settings} onUpdate={handleUpdate} />
     </div>
   );

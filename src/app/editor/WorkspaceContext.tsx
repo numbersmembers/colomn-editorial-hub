@@ -5,6 +5,8 @@ import { createContext, useContext, useState, useEffect, useRef, useCallback } f
 import type { ReactNode } from 'react';
 import type { DraftData, ResearchItem, FactSheet, GeneratorId, GeneratorSettings, StepLog } from '@/types';
 
+type GenericInputMode = 'idea' | 'article';
+
 type PersistedState = {
   draft: DraftData;
   savedResearch: ResearchItem[];
@@ -13,6 +15,8 @@ type PersistedState = {
   generatorSettings: Record<GeneratorId, GeneratorSettings>;
   articleSources: string[];
   sourceColumnBody: string;
+  columnIdea: string;
+  genericInputMode: GenericInputMode;
 }
 
 type WorkspaceContextType = {
@@ -35,6 +39,10 @@ type WorkspaceContextType = {
   setArticleSources: (sources: string[]) => void;
   sourceColumnBody: string;
   setSourceColumnBody: (body: string) => void;
+  columnIdea: string;
+  setColumnIdea: (idea: string) => void;
+  genericInputMode: GenericInputMode;
+  setGenericInputMode: (mode: GenericInputMode) => void;
   resetAll: () => void;
 }
 
@@ -57,25 +65,43 @@ function loadPersistedState(): PersistedState | null {
 const WorkspaceContext = createContext<WorkspaceContextType | undefined>(undefined);
 
 export function WorkspaceProvider({ children }: { children: ReactNode }) {
-  const persisted = loadPersistedState();
-
-  const [draft, setDraft] = useState<DraftData>(persisted?.draft ?? DEFAULT_DRAFT);
-  const [savedResearch, setSavedResearch] = useState<ResearchItem[]>(persisted?.savedResearch ?? []);
-  const [factSheet, setFactSheet] = useState<FactSheet>(persisted?.factSheet ?? DEFAULT_FACTSHEET);
-  const [selectedGeneratorId, setSelectedGeneratorId] = useState<GeneratorId>(
-    persisted?.selectedGeneratorId ?? 'generic'
-  );
+  const [draft, setDraft] = useState<DraftData>(DEFAULT_DRAFT);
+  const [savedResearch, setSavedResearch] = useState<ResearchItem[]>([]);
+  const [factSheet, setFactSheet] = useState<FactSheet>(DEFAULT_FACTSHEET);
+  const [selectedGeneratorId, setSelectedGeneratorId] = useState<GeneratorId>('generic');
   const [generatorSettings, setGeneratorSettings] = useState<Record<GeneratorId, GeneratorSettings>>(
-    persisted?.generatorSettings ?? ({} as Record<GeneratorId, GeneratorSettings>)
+    {} as Record<GeneratorId, GeneratorSettings>
   );
-  const [articleSources, setArticleSources] = useState<string[]>(persisted?.articleSources ?? []);
-  const [sourceColumnBody, setSourceColumnBody] = useState<string>(persisted?.sourceColumnBody ?? '');
+  const [articleSources, setArticleSources] = useState<string[]>([]);
+  const [sourceColumnBody, setSourceColumnBody] = useState<string>('');
+  const [columnIdea, setColumnIdea] = useState<string>('');
+  const [genericInputMode, setGenericInputMode] = useState<GenericInputMode>('article');
   const [isGenerating, setIsGenerating] = useState(false);
   const [pipelineSteps, setPipelineSteps] = useState<StepLog[]>([]);
+  const [hydrated, setHydrated] = useState(false);
 
   const saveTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
+  // Restore from localStorage after mount (avoids hydration mismatch)
   useEffect(() => {
+    const persisted = loadPersistedState();
+    if (persisted) {
+      setDraft(persisted.draft ?? DEFAULT_DRAFT);
+      setSavedResearch(persisted.savedResearch ?? []);
+      setFactSheet(persisted.factSheet ?? DEFAULT_FACTSHEET);
+      setSelectedGeneratorId(persisted.selectedGeneratorId ?? 'generic');
+      setGeneratorSettings(persisted.generatorSettings ?? ({} as Record<GeneratorId, GeneratorSettings>));
+      setArticleSources(persisted.articleSources ?? []);
+      setSourceColumnBody(persisted.sourceColumnBody ?? '');
+      setColumnIdea(persisted.columnIdea ?? '');
+      setGenericInputMode(persisted.genericInputMode ?? 'article');
+    }
+    setHydrated(true);
+  }, []);
+
+  // Persist to localStorage (only after initial hydration)
+  useEffect(() => {
+    if (!hydrated) return;
     if (saveTimerRef.current) clearTimeout(saveTimerRef.current);
     saveTimerRef.current = setTimeout(() => {
       const state: PersistedState = {
@@ -86,6 +112,8 @@ export function WorkspaceProvider({ children }: { children: ReactNode }) {
         generatorSettings,
         articleSources,
         sourceColumnBody,
+        columnIdea,
+        genericInputMode,
       };
       localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
     }, 1000);
@@ -93,7 +121,7 @@ export function WorkspaceProvider({ children }: { children: ReactNode }) {
     return () => {
       if (saveTimerRef.current) clearTimeout(saveTimerRef.current);
     };
-  }, [draft, savedResearch, factSheet, selectedGeneratorId, generatorSettings, articleSources, sourceColumnBody]);
+  }, [hydrated, draft, savedResearch, factSheet, selectedGeneratorId, generatorSettings, articleSources, sourceColumnBody, columnIdea, genericInputMode]);
 
   const addResearchItem = useCallback((item: ResearchItem) => {
     setSavedResearch(prev => {
@@ -122,6 +150,8 @@ export function WorkspaceProvider({ children }: { children: ReactNode }) {
     setGeneratorSettings({} as Record<GeneratorId, GeneratorSettings>);
     setArticleSources([]);
     setSourceColumnBody('');
+    setColumnIdea('');
+    setGenericInputMode('article');
     setPipelineSteps([]);
     localStorage.removeItem(STORAGE_KEY);
   }, []);
@@ -147,6 +177,10 @@ export function WorkspaceProvider({ children }: { children: ReactNode }) {
       setArticleSources,
       sourceColumnBody,
       setSourceColumnBody,
+      columnIdea,
+      setColumnIdea,
+      genericInputMode,
+      setGenericInputMode,
       resetAll,
     }}>
       {children}

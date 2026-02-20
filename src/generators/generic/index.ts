@@ -47,7 +47,10 @@ ${researchContext ? `[Background Context]\n${researchContext}` : ''}
   4. 결론(Conclusion): Synthesize insights without being preachy
 
 Speak in professional Korean.
-**Style**: Use a plain journalistic tone (평어체, ~한다, ~했다). Do not use honorifics (~습니다).`;
+**Style**: Use a plain journalistic tone (평어체, ~한다, ~했다). Do not use honorifics (~습니다).
+
+**CRITICAL**: You MUST complete the column from start to finish. Do NOT stop mid-sentence.
+The conclusion section must be fully written with a proper closing statement before you end output.`;
 }
 
 export const genericGenerator: ColumnGenerator = {

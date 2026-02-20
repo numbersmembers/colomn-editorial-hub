@@ -15,6 +15,8 @@ export default function EditorArea() {
     savedResearch,
     articleSources,
     sourceColumnBody,
+    columnIdea,
+    genericInputMode,
     isGenerating,
     setIsGenerating,
     setPipelineSteps,
@@ -46,13 +48,22 @@ export default function EditorArea() {
         ? savedResearch.map((r, i) => `${i + 1}. ${r.title}: ${r.description}`).join('\n')
         : undefined;
 
-      requestInput = {
-        title: draft.title,
-        idea: draft.title || draft.body.slice(0, 200),
-        sources: allSources.length > 0 ? allSources : undefined,
-        researchContext,
-        settings: generatorSettings[selectedGeneratorId],
-      };
+      if (genericInputMode === 'idea') {
+        requestInput = {
+          title: draft.title,
+          idea: columnIdea,
+          researchContext,
+          settings: generatorSettings[selectedGeneratorId],
+        };
+      } else {
+        requestInput = {
+          title: draft.title,
+          idea: draft.title || draft.body.slice(0, 200),
+          sources: allSources.length > 0 ? allSources : undefined,
+          researchContext,
+          settings: generatorSettings[selectedGeneratorId],
+        };
+      }
     }
 
     try {
@@ -114,7 +125,14 @@ export default function EditorArea() {
     setIsGenerating(false);
   };
 
-  const isDisabled = isGenerating || (isRoad ? !sourceColumnBody.trim() : !draft.title.trim());
+  let isDisabled: boolean;
+  if (isRoad) {
+    isDisabled = isGenerating || !sourceColumnBody.trim();
+  } else if (genericInputMode === 'idea') {
+    isDisabled = isGenerating || !columnIdea.trim();
+  } else {
+    isDisabled = isGenerating || (!draft.title.trim() && articleSources.length === 0);
+  }
 
   return (
     <div className={styles.editorPanel}>

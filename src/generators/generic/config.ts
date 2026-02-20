@@ -17,7 +17,7 @@ export const GENERIC_CONFIG: GeneratorConfig = {
 
 export const STRUCTURE_MAP: Record<string, string> = {
   PREP: 'PREP 구조 (Point-Reason-Example-Point): 핵심 주장 → 이유 설명 → 구체적 사례 → 주장 재확인',
-  NARRATIVE: '서사적 구조 (Narrative): 개인적 경험/일화로 시작 → 가치와 의미 탐구 → 사회적 시사점 도출',
+  NARRATIVE: '서사적 구조 (Narrative): 개인적 경험/일화로 시작 → 가치와 의미 탐구 → 사회적 시사점 도출. 반드시 장면 전환·시점 변화·논점 전환마다 빈 줄(\\n\\n)로 문단을 나눠라. 최소 5개 이상의 문단으로 구성할 것.',
   HEGELIAN: '반전형/헤겔 구조 (Hegelian Dialectic): 통념/정설 제시 → 문제점/모순 지적 → 새로운 대안/통합 제시',
 };
 

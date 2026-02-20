@@ -578,6 +578,44 @@
   padding: 40px 20px;
 }
 
+/* Road input mode toggle */
+.modeToggle {
+  display: flex;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 12px;
+}
+
+.modeBtn {
+  flex: 1;
+  padding: 6px 12px;
+  font-size: 12px;
+  font-weight: 500;
+  border: none;
+  background: #fff;
+  color: #888;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.modeBtn:first-child {
+  border-right: 1px solid #ddd;
+}
+
+.modeBtn:hover {
+  background: #f5f5f5;
+}
+
+.modeBtnActive {
+  background: #1a1a1a;
+  color: #fff;
+}
+
+.modeBtnActive:hover {
+  background: #333;
+}
+
 /* Hidden tab panel (keeps state alive) */
 .tabPanelHidden {
   display: none;
