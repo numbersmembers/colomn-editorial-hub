@@ -75,7 +75,7 @@ export function WorkspaceProvider({ children }: { children: ReactNode }) {
   const [articleSources, setArticleSources] = useState<string[]>([]);
   const [sourceColumnBody, setSourceColumnBody] = useState<string>('');
   const [columnIdea, setColumnIdea] = useState<string>('');
-  const [genericInputMode, setGenericInputMode] = useState<GenericInputMode>('article');
+  const [genericInputMode, setGenericInputMode] = useState<GenericInputMode>('idea');
   const [isGenerating, setIsGenerating] = useState(false);
   const [pipelineSteps, setPipelineSteps] = useState<StepLog[]>([]);
   const [hydrated, setHydrated] = useState(false);
@@ -94,7 +94,7 @@ export function WorkspaceProvider({ children }: { children: ReactNode }) {
       setArticleSources(persisted.articleSources ?? []);
       setSourceColumnBody(persisted.sourceColumnBody ?? '');
       setColumnIdea(persisted.columnIdea ?? '');
-      setGenericInputMode(persisted.genericInputMode ?? 'article');
+      setGenericInputMode(persisted.genericInputMode ?? 'idea');
     }
     setHydrated(true);
   }, []);
@@ -151,7 +151,7 @@ export function WorkspaceProvider({ children }: { children: ReactNode }) {
     setArticleSources([]);
     setSourceColumnBody('');
     setColumnIdea('');
-    setGenericInputMode('article');
+    setGenericInputMode('idea');
     setPipelineSteps([]);
     localStorage.removeItem(STORAGE_KEY);
   }, []);
